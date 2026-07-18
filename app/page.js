@@ -5,10 +5,12 @@ import Skills from "../components/sections/Skills/Skills";
 import Projects from "../components/sections/Projects/Projects";
 import Certifications from "../components/sections/Certifications/Certifications";
 import Contact from "../components/sections/Contact/Contact";
+import Preloader from "../components/Preloader/Preloader";
 
 export default function Home() {
   return (
     <main>
+      <Preloader />
       <VideoIntro nextSectionId="about" />
       <About />
       <Education />
