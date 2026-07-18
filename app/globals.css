@@ -1,0 +1,59 @@
+:root {
+  /* --- Color tokens --- */
+  --color-void: #08070a;         /* near-black base */
+  --color-ember: #ff7a3d;        /* warm practical light accent */
+  --color-ember-deep: #c1440e;   /* deeper orange for gradients */
+  --color-dusk-blue: #3d5a80;    /* soft monitor-glow blue */
+  --color-paper: #f3ece2;        /* warm off-white for type */
+  --color-glass: rgba(255, 255, 255, 0.06);
+  --color-glass-border: rgba(255, 255, 255, 0.14);
+
+  /* --- Type tokens --- */
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* --- Motion tokens --- */
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-void);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

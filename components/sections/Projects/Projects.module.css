@@ -1,0 +1,79 @@
+.projects {
+  position: relative;
+  z-index: 10;
+  background: var(--color-void);
+  padding: 12vh 6vw;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-ember);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  margin: 0.6rem 0 4rem 0;
+  max-width: 20ch;
+  color: var(--color-paper);
+}
+
+.gridWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.4rem;
+  max-width: 1200px;
+}
+
+.card {
+  position: relative;
+  border: 1px solid var(--color-glass-border);
+  background: var(--color-glass);
+  border-radius: 20px;
+  padding: 2rem 2.1rem;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.4s var(--ease-cinematic),
+    transform 0.4s var(--ease-cinematic), background 0.4s var(--ease-cinematic);
+}
+
+.card:hover {
+  border-color: rgba(255, 122, 61, 0.45);
+  background: rgba(255, 122, 61, 0.05);
+  transform: translateY(-6px);
+}
+
+.index {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  color: rgba(255, 122, 61, 0.35);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-paper);
+  margin: 0 0 0.4rem 0;
+}
+
+.stack {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--color-dusk-blue);
+  margin-bottom: 1rem;
+}
+
+.copy {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(243, 236, 226, 0.72);
+  margin: 0;
+}

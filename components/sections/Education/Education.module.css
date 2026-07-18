@@ -1,0 +1,82 @@
+.education {
+  position: relative;
+  z-index: 10;
+  background: var(--color-void);
+  padding: 12vh 6vw;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-ember);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  margin: 0.6rem 0 4rem 0;
+  max-width: 18ch;
+  color: var(--color-paper);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  max-width: 980px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 140px 1fr auto;
+  align-items: baseline;
+  gap: 1.6rem;
+  padding: 1.6rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.row:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.period {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-dusk-blue);
+  letter-spacing: 0.02em;
+}
+
+.degree {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 0 0 0.3rem 0;
+  color: var(--color-paper);
+}
+
+.school {
+  font-size: 0.92rem;
+  color: rgba(243, 236, 226, 0.65);
+  margin: 0;
+}
+
+.score {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-ember);
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .score {
+    order: 3;
+  }
+}
